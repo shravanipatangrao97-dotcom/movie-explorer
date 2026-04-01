@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <meta name="description" content="Discover popular movies, read details, and explore cinema.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-film"></i> Movie<span>Explorer</span>
+        </div>
+        <form id="search-form">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="Search for a movie..." autocomplete="off" required>
+                <button type="submit" class="search-btn">Search</button>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <div class="main-header">
+            <h1 id="results-title">Trending Now</h1>
+        </div>
+
+        <!-- States: Loading, Error, Results -->
+        <div id="loading-state" class="state-container hidden">
+            <!-- Skeletons will be injected here via JS -->
+        </div>
+
+        <div id="error-state" class="state-container hidden">
+            <i class="fas fa-exclamation-circle error-icon"></i>
+            <h2 id="error-message">No results found.</h2>
+            <p>Try adjusting your search criteria.</p>
+        </div>
+
+        <div id="movies-grid" class="movies-grid">
+            <!-- Movie cards will be injected here -->
+        </div>
+    </main>
+
+    <!-- Modal Background with blur -->
+    <div id="movie-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn" aria-label="Close modal"><i class="fas fa-times"></i></button>
+            <div class="modal-body">
+                <div class="modal-poster">
+                    <img id="modal-img" src="" alt="Movie Poster">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title">Movie Title</h2>
+                    <div class="modal-meta">
+                        <span id="modal-year" class="meta-tag"><i class="far fa-calendar-alt"></i> <span>2023</span></span>
+                        <span id="modal-runtime" class="meta-tag"><i class="far fa-clock"></i> <span>120 min</span></span>
+                        <span id="modal-rating" class="meta-tag rating-tag"><i class="fas fa-star"></i> <span>8.5</span></span>
+                    </div>
+                    <div class="modal-genre" id="modal-genre">Action, Adventure</div>
+                    <div class="modal-plot">
+                        <h3>Plot</h3>
+                        <p id="modal-desc">Plot description goes here...</p>
+                    </div>
+                    <div class="modal-cast">
+                        <h3>Cast</h3>
+                        <p id="modal-actors">Actor 1, Actor 2</p>
+                    </div>
+                     <div class="modal-director">
+                        <h3>Director</h3>
+                        <p id="modal-directors">Director Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
