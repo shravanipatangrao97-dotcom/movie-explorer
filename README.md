@@ -70,8 +70,8 @@ Follow these steps to run the project locally on your machine:
 ## ✍️ Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- GitHub: [@yshravanipatangrao97](https://github.com/shravanipatangrao97-dotcom)
+- LinkedIn: [Shravani Patangrao](www.linkedin.com/in/shravani-patangrao-745759376)
 
 ---
 *Feel free to star ⭐ this repository if you found it helpful!*
