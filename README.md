@@ -54,11 +54,11 @@ Follow these steps to run the project locally on your machine:
 
 ## 📸 Screenshots
 
-*(Add your screenshots here)*
+Here is a preview of the Movie Explorer application in action:
 
-| Home Page | Movie Details | Dark Mode |
+| Home Page | Movie Details | Theme Toggle |
 | :---: | :---: | :---: |
-| ![Home Placeholder]() | ![Details Placeholder]() | ![Dark Mode Placeholder]() |
+| ![Home Page](images/home.png) | ![Movie Details](images/details.png) | ![Theme Feature](images/theme.png) |
 
 ## 🔮 Future Improvements
 
