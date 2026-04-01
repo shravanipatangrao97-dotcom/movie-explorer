@@ -13,9 +13,10 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo" id="home-link">
             <i class="fa-solid fa-film"></i> Movie<span>Explorer</span>
         </div>
+        
         <form id="search-form">
             <div class="search-container">
                 <i class="fas fa-search search-icon"></i>
@@ -23,11 +24,32 @@
                 <button type="submit" class="search-btn">Search</button>
             </div>
         </form>
+
+        <nav class="nav-links">
+            <button id="view-favorites-btn" class="nav-btn" title="View Favorites"><i class="fas fa-heart"></i> Favorites</button>
+            <button id="theme-toggle-btn" class="nav-btn icon-only" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+        </nav>
     </header>
 
     <main>
         <div class="main-header">
             <h1 id="results-title">Trending Now</h1>
+            
+            <div class="controls-container">
+                <select id="filter-type" class="control-select">
+                    <option value="">All Types</option>
+                    <option value="movie">Movies</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episodes</option>
+                </select>
+                <select id="sort-results" class="control-select">
+                    <option value="">Sort By</option>
+                    <option value="year-desc">Newest First</option>
+                    <option value="year-asc">Oldest First</option>
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                </select>
+            </div>
         </div>
 
         <!-- States: Loading, Error, Results -->
@@ -39,6 +61,12 @@
             <i class="fas fa-exclamation-circle error-icon"></i>
             <h2 id="error-message">No results found.</h2>
             <p>Try adjusting your search criteria.</p>
+        </div>
+
+        <div id="empty-favorites" class="state-container hidden">
+            <i class="far fa-heart error-icon" style="color:var(--text-secondary)"></i>
+            <h2>No Favorites Yet</h2>
+            <p>Click the heart icon on any movie to save it to your favorites list.</p>
         </div>
 
         <div id="movies-grid" class="movies-grid">
