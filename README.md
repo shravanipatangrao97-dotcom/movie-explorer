@@ -52,14 +52,6 @@ Follow these steps to run the project locally on your machine:
 4. **Run the App**:
    - Simply open `index.html` in your web browser, or use a tool like [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code to run it on a local development server.
 
-## 📸 Screenshots
-
-Here is a preview of the Movie Explorer application in action:
-
-| Home Page | Movie Details | Theme Toggle |
-| :---: | :---: | :---: |
-| ![Home Page](images/home.png) | ![Movie Details](images/details.png) | ![Theme Feature](images/theme.png) |
-
 ## 🔮 Future Improvements
 
 - Add pagination or infinite scrolling for long lists of search results.
